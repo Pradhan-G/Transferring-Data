@@ -1,0 +1,48 @@
+#baap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+#mainContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.LeftContainer {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 30vh;
+  background-color: goldenrod;
+}
+
+.RightContainer {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 30vh;
+  background-color: goldenrod;
+}
+
+button {
+  height: 30px;
+  width: 70px;
+  color: white;
+  background-color: grey;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(204, 204, 204);
+}
