@@ -14,18 +14,20 @@ const Page1 = () => {
   };
 
   const handleRight = (e) => {
-    if (check == true) {
-      console.log("checked");
-      console.log(check);
-    } else {
-      console.log(check);
-    }
+    data &&
+      data.map((d) => {
+        // console.log(d);
+      });
   };
 
   const handleLeft = (e) => {};
 
   function handleSubmit() {
-    data.push(submit);
+    data.push({
+      check: false,
+      dataSubmitted: submit,
+      id: Math.trunc(Math.random() * 10),
+    });
     setData([...data]);
     console.log(data);
     setSubmit("");
@@ -64,7 +66,7 @@ const Page1 = () => {
                         value={check}
                         onChange={markUnMarkCheck}
                       />{" "}
-                      {event}{" "}
+                      {event.dataSubmitted}{" "}
                     </li>
                   );
                 })}
